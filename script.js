@@ -14,8 +14,8 @@ copyBtn.addEventListener('click', async () => {
     document.execCommand('copy');
     window.getSelection().removeAllRanges();
   }
-  status.textContent = text === 'Not published yet' ? 'Nothing to copy yet.' : 'Copied!';
-  setTimeout(() => { status.textContent = 'The contract is not live on this page yet.'; }, 2000);
+  status.textContent = 'Copied!';
+  setTimeout(() => { status.textContent = 'Tap to copy.'; }, 2000);
 });
 
 const flipCard = document.getElementById('flip-card');
